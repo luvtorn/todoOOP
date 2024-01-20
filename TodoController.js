@@ -9,15 +9,15 @@ class TodoList {
 
         this.form.addEventListener("submit", this.addTodo.bind(this));
 
-        this.showTodos();
+        this.showTodos()
     }
 
     setTodos(todos) {
-        this.storage.setTodos(todos);
+        storage.setTodos(todos);
     }
 
     getTodos() {
-        return this.storage.getTodos() || [];
+        return storage.getTodos() || [];
     }
 
     addTodo(e) {
